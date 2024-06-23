@@ -1,34 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deusa do Mar</title>
-
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
     <style>
-        .navegacao
+        html {
+            background-color: white;
+        }
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .barra-navegacao {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            background-color: #f72585;
+            /* background-image: url(); */
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 300px;
+        }
+
+        .contato-cabeca {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logo h1 {
+            margin: 0;
+            color: #7209b7;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3a0ca3;
+        }
+
+        .contatos {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            gap: 30px;
+        }
+
+        .contatos-left {
+            display: flex;
+            flex-direction: column;
+            background-color: #8a33c4;
+            padding: 15px;
+
+        }
+
+        .contatos-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .input-A {
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .input-B {
+            font-size: 20px;
+            padding-top: 90px;
+            padding-bottom: 90px;
+            padding-left: 10px;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rodape {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 400px;
+            background-color: #f72585;
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
+    <header class="barra-navegacao">
+        <div class="contato-cabeca">
+            <div class="logo" style="display: flex; flex-direction: row; align-items: center;">
                 <h1>Deusa do Mar</h1>
+                <img src="/imagens/ligthning.png" alt="raio" ; width="40px" ; height="60px">
             </div>
 
-            <nav>
+            <nav style="display: flex; align-items: center;">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Produtos</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="#">Nosso contato</a></li>    
-                </ul>    
+                    <li><a href="#">Nosso contato</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+        <div style="padding-top: 90px; padding-left: 250px; color:#1e093a;">
+            <div>
+                <h2>Contato</h2>
+
+            </div>
+            <p>Home / Deusakinis / Contato</p>
+        </div>
+    </header>
+
+    <div class="page">
+        <h1>Contatos</h1>
+        <div style="padding-bottom: 20px;">
+            Moda praia autoral.
+            básica, confortável & autêntica!
+        </div>
+        <div class="contatos">
+            <div class="contatos-left">
+                <div>
+                    <h3>Ligue para gente!</h3>
+                    <p>+55 85 99999-5555</p>
+                </div>
+                <div>
+                    <h3>Nosso E-mail</h3>
+                    <p>deusadomarloja@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Nosso endereço</h3>
+                    <p>Nossa morada fica em Fortaleza, na terra da luz!</p>
+                </div>
+                <div>
+                    <h3>Nós siga nas redes!</h3>
+                </div>
+            </div>
+            <div class="contatos-right">
+                <div style="display: flex; justify-content: center; gap: 10px;">
+                    <input class="input-A" type="text" name="name" placeholder="Seu nome">
+                    <input class="input-A" type="email" name="email" placeholder="Seu email">
+                </div>
+                <input class="input-A" type="text" name="subject" placeholder="Assunto">
+                <input class="input-B" placeholder="Deixe seu recadinho."></input>
+                <button style="height: 40px; width: 150px; font-size: 20px;" type="submit">Enviar</button>
+            </div>
+
+        </div>
+        <div style="padding-top: 60px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53566.74866720648!2d-38.54819067674901!3d-3.7287289316821783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74841ba67de31%3A0xef2de945119c588f!2sPraia%20de%20Iracema!5e0!3m2!1spt-BR!2sbr!4v1719106564781!5m2!1spt-BR!2sbr"
+                width="937" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="rodape">
+            <div
+                style="display: flex; flex-direction: row; gap: 40px; padding-left: 220px; padding-top: 60px; padding-bottom: 40px;">
+                <div>
+                    <h2>Deusa do Mar</h2>
+                    <p>!!!!!!</p>
+                </div>
+                <div>
+                    <h1>Endereço</h1>
+                    <p>Fortaleza - Ceará - Brasil</p>
+                    <p>+55 85 99999-5555</p>
+                    <p>deusadomarloja@gmail.com</p>
+                </div>
+                <div>
+                    <h1>Links</h1>
+                    <ul>
+                        <li><a href="#">Sobre a gente</a></li>
+                        <li><a href="#">Nosso Contato</a></li>
+                        <li><a href="#">Nossos produtos</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Newsletter</h1>
+                    <p>Siga nossa newsletter</p>
+                    <input type="email" placeholder="Seu email">
+                    <button>Entrar</button>
+                </div>
+            </div>
+            <div
+                style="display: flex; flex-direction: row; border-top: 1px solid rgb(105, 90, 90); justify-content: space-between;padding-left: 220px; padding-right: 220px; padding-top: 30px;">
+                <div>
+                    <p>© Deusa do Mar, All Right Reserved.</p>
+                </div>
+                <div>
+                    <p>© Deusa do Mar, All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-
 </body>
+
 </html>
